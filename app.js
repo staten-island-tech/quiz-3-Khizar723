@@ -46,6 +46,6 @@ else if (ralphBills[2] > 200) {
      return percentage * ralphBills;
  }
 
- const billTips = [tipCalculator(ralphBills[0] , tipCalculator(ralphBills[1] , tipCalculator(ralphBills[2]]
+ const billTips = [tipCalculator(ralphBills[0]) , tipCalculator(ralphBills[1]) , tipCalculator(ralphBills[2])]
 
- 
+ console.log (billTips);
