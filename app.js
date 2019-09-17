@@ -49,3 +49,32 @@ else if (ralphBills[2] > 200) {
  const billTips = [tipCalculator(ralphBills[0]) , tipCalculator(ralphBills[1]) , tipCalculator(ralphBills[2])]
 
  console.log (billTips);
+
+ function totalCalculator(ralphBills) {
+    let percentage;
+    if (ralphBills <50 ) {
+        percentage = 1.20 ;
+    } else if (ralphBills >= 50 && ralphBills < 200) {
+        percentage = 1.15;
+    } else {
+        percentage = 1.10 ;
+    }
+    return percentage * ralphBills;
+}
+
+const billTotals = [totalCalculator(ralphBills[0]) , totalCalculator(ralphBills[1]) , totalCalculator(ralphBills[2])]
+
+console.log (billTotals);
+
+
+/*const amtOver100 = billTotals.filter(value => 100);
+
+console.log(amtOver100); */
+
+function billFiltered(value) {
+    return value >= 100;
+  }
+  
+  var filtered = [totalCalculator(ralphBills[0]) , totalCalculator(ralphBills[1]) , totalCalculator(ralphBills[2])].filter(billFiltered);
+
+  console.log(filtered)
