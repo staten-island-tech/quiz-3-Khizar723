@@ -1,4 +1,4 @@
-const ralphBills = [140,45,275];
+//const ralphBills = [140,45,275];
 
 /* let tips20 = function (ralphBills[1] * 1.2)
 
@@ -34,7 +34,7 @@ else if (ralphBills[2] > 200) {
  */
 
 
- function tipCalculator(ralphBills) {
+/*  function tipCalculator(ralphBills) {
      let percentage;
      if (ralphBills <50 ) {
          percentage = 0.2;
@@ -71,10 +71,37 @@ console.log (billTotals);
 
 console.log(amtOver100); */
 
-function billFiltered(value) {
+/* function billFiltered(value) {
     return value >= 100;
   }
   
   var filtered = [totalCalculator(ralphBills[0]) , totalCalculator(ralphBills[1]) , totalCalculator(ralphBills[2])].filter(billFiltered);
 
-  console.log(filtered)
+  console.log(filtered) */
+
+  const Dejon = {
+      fullname : 'Dejon Kurti' , 
+      mass : 110,
+      height : 1.95, 
+      getBMI : function () {
+        return this.mass / (this.mass * this.mass);
+    }
+  }
+
+  const Rob = {
+    fullname :'Robert Grande' , 
+    mass : 78,
+    height : 1.69,
+    getBMI : function () {
+        return this.mass / (this.mass * this.mass);
+    }
+}
+
+console.log(Dejon.getBMI());
+console.log(Rob.getBMI());
+
+if (Rob.getBMI() > Dejon.getBMI() ){
+    console.log(Rob.fullname + 'has the greater BMI' )
+}   else if (Dejon.getBMI()> Rob.getBMI()){
+    console.log(Dejon.fullname +'has the greater BMI');
+}   
