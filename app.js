@@ -101,7 +101,9 @@ console.log(Dejon.getBMI());
 console.log(Rob.getBMI());
 
 if (Rob.getBMI() > Dejon.getBMI() ){
-    console.log(Rob.fullname + 'has the greater BMI' )
+    console.log(Rob.fullname + ' has the greater BMI' )
 }   else if (Dejon.getBMI()> Rob.getBMI()){
-    console.log(Dejon.fullname +'has the greater BMI');
-}   
+    console.log(Dejon.fullname +' has the greater BMI');
+}   else {
+    console.log('They have the samr BMI')
+}
